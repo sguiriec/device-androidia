@@ -149,6 +149,10 @@ BOARD_FLASHFILES += $(TARGET_DEVICE_DIR)/flash.json
 BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_TINY_ALSA_AUDIO := true
 BOARD_USES_GENERIC_AUDIO ?= false
+# Audio HAL selvection Flag default setting.
+#  INTEL_AUDIO_HAL:= audio     -> baseline HAL
+#  INTEL_AUDIO_HAL:= audio_pfw -> PFW-based HAL
+INTEL_AUDIO_HAL := audio
 ##############################################################
 # Source: device/intel/mixins/groups/wlan/iwlwifi/BoardConfig.mk
 ##############################################################
