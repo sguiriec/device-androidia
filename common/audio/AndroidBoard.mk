@@ -10,10 +10,10 @@ ifeq ($(INTEL_AUDIO_HAL), stub)
 AUDIO_HARDWARE := stub
 
 else
-AUDIO_HARDWARE := default
+#AUDIO_HARDWARE := default
 #AUDIO_HARDWARE := PCH-CX20724
 # Next configuration is used for Intel NUC6i5SYH
-#AUDIO_HARDWARE := PCH-ALC283
+AUDIO_HARDWARE := PCH-ALC283
 #AUDIO_HARDWARE := nuc-skull-canyon
 
 ###########################################

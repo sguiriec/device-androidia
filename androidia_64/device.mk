@@ -350,6 +350,10 @@ PRODUCT_PACKAGES += \
     audio_policy.default.so \
     audio_configuration_files
 
+ifeq ($(INTEL_AUDIO_HAL),audio_pfw)
+PRODUCT_PACKAGES += audio_hal_configurable
+endif
+
 ##############################################################
 # Source: device/intel/mixins/groups/wlan/iwlwifi/product.mk
 ##############################################################
